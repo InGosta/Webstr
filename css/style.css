@@ -1,3 +1,4 @@
+ /*Шрифты*/
  @font-face {
     font-family:Myriad; /* Имя шрифта */
     src: url(../font/MyriadProBlackSemiExtended.ttf) format('truetype'); /* Путь к файлу со шрифтом */
@@ -5,7 +6,28 @@
 
 font-style: normal;
    }
+@font-face {
+    font-family:CoreRhino45Regular; /* Имя шрифта */
+    src: url(../font/CoreRhino45Regular.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
 
+font-style: normal;
+   }
+   @font-face {
+    font-family:NautilusPompilius; /* Имя шрифта */
+    src: url(../font/NautilusPompilius.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+
+font-style: normal;
+   }
+      @font-face {
+    font-family:CoreRhino35Light; /* Имя шрифта */
+    src: url(../font/CoreRhino35Light.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+
+font-style: normal;
+   }
+   /*Шрифты*/
 body
 {
 	background: url("../images/bg.png") repeat;
@@ -80,6 +102,80 @@ text-decoration: none;
 	
 }
 
+.navbar-light .navbar-brand {
+    color: #864729;	
+    font-family: CoreRhino35Light, sans-serif;
+}
+
+.logo
+{
+	font-family: NautilusPompilius;
+	font-size: 60px;
+	color: #864729;
+	margin-bottom: 0px;
+}
+.logo-text
+{
+	font-family: CoreRhino45Regular;
+	color: #864729;
+	font-size: 20px;
+	text-align: center;
+}
+
+.phone
+{
+font-family: CoreRhino35Light;
+font-size: 18px;
+color: #864729;
+margin-bottom: 0px;
+}
+
+.phone-wrap
+{
+	align-items:center;
+	padding-top: 25px;
+}
+
+.phone:first-child:before
+{
+	content: url("../images/Phone.png");
+	position: absolute;
+	width: 10px;
+	height: 21px;
+	
+	transform: translateX(-25px);
+
+}
+.adres
+{
+font-family: CoreRhino35Light;
+font-size: 14px;
+color: #864729;
+margin-bottom: 0px;	
+}
+
+.adres:before
+{
+	content: url("../images/ADres.png");
+	position: absolute;
+	width: 10px;
+	height: 21px;
+	
+	transform: translateX(-25px);
+
+}
+.adres-wrap
+{
+	align-items:center;
+	padding-top: 25px;
+}
+
+.carousel-wrap
+{
+	margin-top: 70px;
+}
+
+/*Медиа запросы 1200px*/
 @media (max-width: 1200px) 
 { 
 
@@ -88,10 +184,58 @@ text-decoration: none;
 margin-right: 10%;
 }
 
+.logo
+{
+	font-size: 50px;
 }
 
+.logo-text
+{
+	
+	font-size: 18px;
+	
+}
+
+}
+/*Конец запроса 1200*/
+
+/*Медиа запросы 780px*/
 @media (max-width: 780px) 
 { 
+	.logo
+{
+	font-size: 40px;
+}
+.logo-text
+{
+	
+	font-size: 14px;
+	
+}
+.phone-wrap
+{
+	
+	padding-top: 15px;
+}
+
+.adres-wrap
+{
+	
+	padding-top: 15px;
+}
+.adres
+{
+
+font-size: 12px;
+
+}
+.phone
+{
+
+font-size: 15px;
+
+}
+
 .nav-menu
 {
 	display: block;
@@ -99,6 +243,7 @@ margin-right: 10%;
 	border-bottom:none;
 	
 }
+
 .nav-menu li
 {
 display: block;
@@ -109,3 +254,28 @@ padding-bottom: 2px;
 }
 
 }
+/*Конец запроса 780*/
+/*Медиа запросы 430px*/
+@media (max-width: 430px) 
+{ 
+.phone-wrap
+{
+	
+	text-align: center;
+}
+.adres-wrap
+{
+	
+	text-align: center;
+}
+.logo-text-wrap
+{
+	text-align: center;
+}
+.carousel-wrap
+{
+	display: none;
+}
+}
+/*Конец запроса 780*/
+
