@@ -1,0 +1,111 @@
+ @font-face {
+    font-family:Myriad; /* Имя шрифта */
+    src: url(../font/MyriadProBlackSemiExtended.ttf) format('truetype'); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+
+font-style: normal;
+   }
+
+body
+{
+	background: url("../images/bg.png") repeat;
+	background-size: 200px;
+	background-clip: padding-box;
+	background-position: center;
+}
+
+.nav-menu
+{
+	
+	list-style: none; 
+	width: 100%;
+
+}
+.navbar-light .navbar-nav .nav-link {
+color: #864729;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: #864729;;
+}
+
+.nav-menu li
+{
+	display: inline-block;
+	font-family: Myriad, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size:16px;
+	color: #864729;
+	margin-right: 13%;
+	padding-bottom: -2px;
+
+	
+}
+.nav-menu li:last-child
+{
+	margin-right: 2%;
+}
+
+.nav-menu li a:link,.nav-menu li a:target
+{
+color: #864729;
+text-decoration: none;
+
+}
+
+/*.nav-menu li.active:before
+{   content: "";
+	width:120px;
+	border-bottom: 2px #864729 solid;
+	position: absolute;
+	top: 45px;
+	transform: translateX(-20px);
+
+
+}*/
+.nav-menu li.active
+{
+	padding-bottom: 20px;
+	border-bottom: 2px #864729 solid;
+	transform: translateY(2px);
+}
+
+
+.nav-menu
+{
+	display: block;
+
+	border-bottom: 2px #e3e3e3 solid;
+	
+}
+
+@media (max-width: 1200px) 
+{ 
+
+.nav-menu li
+{
+margin-right: 10%;
+}
+
+}
+
+@media (max-width: 780px) 
+{ 
+.nav-menu
+{
+	display: block;
+
+	border-bottom:none;
+	
+}
+.nav-menu li
+{
+display: block;
+}
+.nav-menu li.active
+{
+padding-bottom: 2px;
+}
+
+}
