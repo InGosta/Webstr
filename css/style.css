@@ -14,6 +14,13 @@ font-style: normal;
 font-style: normal;
    }
    @font-face {
+    font-family:Coreriho65bold; /* Имя шрифта */
+    src: url(../font/Coreriho65bold.ttf) format("truetype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+
+font-style: normal;
+   }
+   @font-face {
     font-family:NautilusPompilius; /* Имя шрифта */
     src: url(../font/NautilusPompilius.otf) format("opentype"); /* Путь к файлу со шрифтом */
     font-weight: normal;
@@ -27,6 +34,32 @@ font-style: normal;
 
 font-style: normal;
    }
+
+@font-face {
+    font-family:MyriadPro-Bold; /* Имя шрифта */
+    src: url(../font/MyriadPro-Bold.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+	font-style: normal;
+   }
+   @font-face {
+    font-family:MyriadPro-Regular; /* Имя шрифта */
+    src: url(../font/MyriadPro-Regular.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+	font-style: normal;
+   }
+    @font-face {
+    font-family:Segoe_ui_bold; /* Имя шрифта */
+    src: url(../font/Segoe_ui_bold.ttf) format("truetype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+	font-style: normal;
+   }
+    @font-face {
+    font-family:MyriadPro-Semibold; /* Имя шрифта */
+    src: url(../font/MyriadPro-Semibold.otf) format("opentype"); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+	font-style: normal;
+   }
+
    /*Шрифты*/
 body
 {
@@ -61,6 +94,10 @@ color: #864729;
 	color: #864729;
 	margin-right: 13%;
 	padding-bottom: -2px;
+	transform: translateY(2px);
+	padding-bottom: 20px;
+	border-bottom: 2px #e3e3e3 solid;
+	/*border-bottom: 2px #864729 solid;*/
 
 	
 }
@@ -69,7 +106,7 @@ color: #864729;
 	margin-right: 2%;
 }
 
-.nav-menu li a:link,.nav-menu li a:target
+.nav-menu li a:link,.nav-menu li a:target,.menu a, .menu a:hover, .menu a:link
 {
 color: #864729;
 text-decoration: none;
@@ -86,13 +123,29 @@ text-decoration: none;
 
 
 }*/
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #864729;
+}
 .nav-menu li.active
 {
 	padding-bottom: 20px;
 	border-bottom: 2px #864729 solid;
-	transform: translateY(2px);
+	
 }
 
+.nav-menu li:hover
+{
+	color: #864729;
+	transition-duration: 1s;
+	border-color: #864729;
+	
+}
+.nav-menu li a:hover
+{
+	color: #864729;
+ 
+	/*transform: translateY(2px);*/
+}
 
 .nav-menu
 {
@@ -174,6 +227,203 @@ margin-bottom: 0px;
 {
 	margin-top: 70px;
 }
+.content-wrap
+{
+	background-color: #ffffff;
+	min-height: 80vh;
+	padding-left: 15px;
+	padding-bottom: 120px;
+	
+}
+.menu
+{
+	background-color:#f5f5f5;
+	height: 570px;
+	margin-top: 40px;
+	
+	color: #864729;
+	 box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.08);
+	 padding: 0px;
+}
+.menu a
+{
+padding-left: 15px;
+display: inline-block;
+}
+
+
+
+
+.menu-title
+{
+	font-family: MyriadPro-Bold;
+	font-size: 20px;
+	margin-top: 30px;
+	text-transform: uppercase;
+	padding-left: 15px;
+}
+.menu-list
+{
+padding: 0;
+font-size: 18px;
+font-family: MyriadPro-Regular;
+line-height: 2;
+font-weight: 50;
+
+	}
+
+.menu-list li
+{
+	list-style: none;
+}
+.menu-list a:hover
+{
+	background: linear-gradient(90deg,#874a31,#af795e);
+	color:#ffffff;
+	display: block;
+	border-radius: 10px;
+}
+
+.menu-active a
+{
+	font-family: Segoe_ui_bold;
+	background: linear-gradient(90deg,#874a31,#af795e);
+	color:#ffffff;
+	display: block;
+	border-radius: 10px;
+	
+
+}
+
+.menu-active a, .menu-active a:hover, .menu-active a:link
+{
+	color:#ffffff;
+}
+.sab-menu 
+{
+padding-left: 30px;
+}
+.sab-menu a
+{
+	color: #864729;
+	background: none;
+	font-family: MyriadPro-Regular;
+	font-size: 15px;
+	    padding: 0;
+}
+.sab-menu li.active a
+{
+background: none;
+font-family: MyriadPro-Bold;
+border-bottom: 1px #864729 solid;
+display: inline-block;
+font-size: 15px;
+border-radius: 0px;
+}
+.sab-menu li a:hover
+{
+background: none;
+
+border-bottom: 1px #864729 solid;
+display: inline-block;
+border-radius: 0px;
+}
+.sab-menu a, .sab-menu a:hover, .sab-menu a:link
+{
+	color:#864729;
+
+}
+
+.content
+{
+	margin-top: 40px;
+}
+
+.breadcrumbs-list
+{
+list-style: none;
+font-style: MyriadPro-Semibold;
+font-size: 14px;
+color:#864729;
+padding: 0px;
+}
+.breadcrumbs-list li a, .breadcrumbs-list li a:hover, .breadcrumbs-list li a:link
+{
+	color:#864729;
+	text-decoration: none;
+
+}
+.breadcrumbs-list li
+{
+display: inline-block;
+}
+.breadcrumbs-list li:first-child
+{
+margin-left: 0px;
+margin-right: 15px;
+}
+.breadcrumbs-list li
+{
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.breadcrumbs-list li a.active
+{
+font-weight: 700;
+}
+.breadcrumbs-list li+li:before
+{
+content: "/";
+position: absolute;
+transform: translateX(-15px);
+}
+
+.content-text h1
+{
+color:#864729;
+font-family: Coreriho65bold;
+font-size: 35px;
+}
+.content-text h2
+{
+color:#864729;
+font-family: Coreriho65bold;
+font-size: 25px;
+}
+.content-text .text
+{
+	font-family: MyriadPro-Regular;
+	font-size: 14px;
+}
+
+.text ul 
+{
+	list-style: none;
+}
+.text li:before
+{
+content: url("../images/circle.png");
+margin-right: 3px;
+
+}
+footer
+{
+	height: 110px;
+	width: 100%;
+background-image: linear-gradient(-90deg,#864729,#8b4d2f);
+
+
+}
+
+/*Медиа запросы 1025px*/
+@media (max-width: 1025px) 
+{ 
+.nav-menu li
+{
+margin-right: 10%;
+}
+}
 
 /*Медиа запросы 1200px*/
 @media (max-width: 1200px) 
@@ -183,6 +433,8 @@ margin-bottom: 0px;
 {
 margin-right: 10%;
 }
+
+
 
 .logo
 {
