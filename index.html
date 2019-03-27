@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Плюшка епта</title>
+	<title>ООО Плюшка</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -36,7 +36,7 @@
 
 <div class="row logo-wrap">
 <div class="col-12 col-sm-6 col-md-5 logo-text-wrap">
-	<p class="logo">ООО «Плюшка»</p>
+	<p class="logo"><a href="#">ООО «Плюшка»</a></p>
 	<p class="logo-text">Кондитерские изделия </p>
 </div>
 <div class="col-12 col-sm-6 col-md-4 phone-wrap">
@@ -83,9 +83,16 @@
 <section class="container ">
 	<div class="content-wrap">
 		<div class="row">
-			<div class="col-3 menu">
+			<div class="col sm-12 col-md-3 menu">
 				<p class="menu-title">Каталог товаров</p>
-				<ul class="menu-list">
+				<nav class="navbar navbar-expand-md navbar-light">
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+    	<a class="navbar-brand navbar-menu-title" href="#">Каталог товаров</a>
+  	</button>
+		<div class="collapse navbar-collapse" id="navbar2">
+	   		<ul class="menu-list">
 					<li><a href="#">Пример пункта</a></li>
 					<li><a href="#">Пример пункта 2</a></li>
 					<li class="menu-active"><a href="#">Выпадающий пункт</a>
@@ -99,9 +106,26 @@
 					<li><a href="#">Пример пункта 3</a></li>
 					<li><a href="#">Пример пункта в две строки</a></li>
 				</ul>
+		</div>
+		
+	</nav>
+				<!--<ul class="menu-list">
+					<li><a href="#">Пример пункта</a></li>
+					<li><a href="#">Пример пункта 2</a></li>
+					<li class="menu-active"><a href="#">Выпадающий пункт</a>
+						<ul class="sab-menu">
+							<li><a href="#">Выпадающее меню. Примерный текст в две строки</a></li>
+							<li class="active"><a href="#">Выпадающее меню</a></li>
+							<li><a href="#">Выпадающее меню</a></li>
+							<li><a href="#">Выпадающее меню</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Пример пункта 3</a></li>
+					<li><a href="#">Пример пункта в две строки</a></li>
+				</ul>-->
 				
 			</div>
-			<div class="col-9 content">
+			<div class="col-sm-12 col-md-9 content">
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs-list">
 						<li><a href="">Главная</a> </li>

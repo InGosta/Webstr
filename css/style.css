@@ -106,7 +106,7 @@ color: #864729;
 	margin-right: 2%;
 }
 
-.nav-menu li a:link,.nav-menu li a:target,.menu a, .menu a:hover, .menu a:link
+.nav-menu li a:link,.nav-menu li a:target,.menu a, .menu a:hover, .menu a:link, .logo a, .logo a:target, .logo a:hover, .logo a:link
 {
 color: #864729;
 text-decoration: none;
@@ -158,6 +158,9 @@ text-decoration: none;
 .navbar-light .navbar-brand {
     color: #864729;	
     font-family: CoreRhino35Light, sans-serif;
+}
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: #864729;	
 }
 
 .logo
@@ -331,6 +334,8 @@ border-radius: 0px;
 .sab-menu a, .sab-menu a:hover, .sab-menu a:link
 {
 	color:#864729;
+	text-decoration: none;
+	display: inline-block;
 
 }
 
@@ -456,7 +461,7 @@ margin-right: 10%;
 { 
 	.logo
 {
-	font-size: 40px;
+	font-size: 35px;
 }
 .logo-text
 {
@@ -474,6 +479,7 @@ margin-right: 10%;
 {
 	
 	padding-top: 15px;
+	margin-left: 30px;
 }
 .adres
 {
@@ -504,6 +510,30 @@ display: block;
 {
 padding-bottom: 2px;
 }
+
+.menu-title {
+    display: none;
+}
+.menu {
+    height: auto;
+    margin-top: 0px;
+    }
+
+    .content-wrap {
+    
+    padding-right: 15px;
+    
+}
+.navbar-menu-title {
+    font-size:19px;
+      
+}
+.content-wrap
+{
+	margin-top: 10px;
+}
+
+
 
 }
 /*Конец запроса 780*/
