@@ -294,6 +294,10 @@ font-weight: 50;
 	display: block;
 	border-radius: 10px;
 }
+.menu-active 
+{
+	cursor: pointer;
+}
 
 .menu-active a
 {
@@ -313,6 +317,7 @@ font-weight: 50;
 .sab-menu 
 {
 padding-left: 30px;
+transition-duration: 1s;
 }
 .sab-menu a
 {
@@ -326,7 +331,8 @@ padding-left: 30px;
 {
 background: none;
 font-family: MyriadPro-Bold;
-border-bottom: 1px #864729 solid;
+/*border-bottom: 1px #864729 solid;*/
+text-decoration:underline;
 display: inline-block;
 font-size: 15px;
 border-radius: 0px;
@@ -335,7 +341,7 @@ border-radius: 0px;
 {
 background: none;
 
-border-bottom: 1px #864729 solid;
+text-decoration:underline;
 display: inline-block;
 border-radius: 0px;
 }
@@ -504,6 +510,21 @@ font-family: MyriadPro-Regular;
 	text-transform: uppercase;
 }
 
+.enable
+{
+	display: block;
+
+}
+.disable
+{
+	display: none;
+}
+.subText
+{
+	color:#fff;
+}
+
+
 /*Медиа запросы 1025px*/
 @media (max-width: 1025px) 
 { 
@@ -601,6 +622,9 @@ margin-right: 10%;
 }
 .menu-title {
     display: none;
+}
+.content-wrap {
+    padding-right: 15px;
 }
 }
 /*Конец запроса 1000*/
