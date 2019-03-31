@@ -595,6 +595,13 @@ margin-right: 10%;
 .nav-menu li:hover {
     border-color: transparent;
 }
+.menu {
+    height: auto;
+    margin-top: 0px;
+}
+.menu-title {
+    display: none;
+}
 }
 /*Конец запроса 1000*/
 
@@ -621,7 +628,7 @@ margin-right: 10%;
 {
 	
 	padding-top: 15px;
-	margin-left: 30px;
+	margin-left: 0px;
 }
 .adres
 {
