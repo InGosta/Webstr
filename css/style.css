@@ -186,7 +186,7 @@ text-decoration: none;
 
 .phone
 {
-font-family: CoreRhino35Light;
+font-family: CoreRhino45Regular;
 font-size: 18px;
 color: #864729;
 margin-bottom: 0px;
@@ -196,6 +196,7 @@ margin-bottom: 0px;
 {
 	align-items:center;
 	padding-top: 25px;
+	margin-left: 30px;
 }
 
 .phone:first-child:before
@@ -210,10 +211,11 @@ margin-bottom: 0px;
 }
 .adres
 {
-font-family: CoreRhino35Light;
+font-family: CoreRhino45Regular;
 font-size: 14px;
 color: #864729;
 margin-bottom: 0px;	
+margin-left: 30px;
 }
 
 .adres:before
