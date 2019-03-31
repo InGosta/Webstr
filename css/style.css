@@ -356,6 +356,7 @@ border-radius: 0px;
 .content
 {
 	margin-top: 40px;
+	padding-left: 30px;
 }
 
 .breadcrumbs-list
@@ -403,12 +404,14 @@ transform: translateX(-15px);
 color:#864729;
 font-family: Coreriho65bold;
 font-size: 35px;
+margin-bottom: 30px;
 }
 .content-text h2
 {
 color:#864729;
 font-family: Coreriho65bold;
 font-size: 25px;
+margin-bottom: 30px;
 }
 .content-text .text
 {
@@ -419,6 +422,7 @@ font-size: 25px;
 .text ul 
 {
 	list-style: none;
+	padding-left: 20px;
 }
 .text li:before
 {
@@ -626,6 +630,18 @@ margin-right: 10%;
 .content-wrap {
     padding-right: 15px;
 }
+.footer-menu li a {
+  
+    font-size: 9px;
+   
+}
+.footer-menu-text {
+    font-size: 10px;
+    
+}
+.footer-logo {
+        transform: translateX(70%);
+}
 }
 /*Конец запроса 1000*/
 
@@ -721,7 +737,7 @@ font-size: 11px;
 
 }
 .footer-logo {
-    transform: translateX(90%);
+    transform: translateX(160%);
 }
 
 .logo-text-wrap,.phone-wrap, .adres-wrap
@@ -733,6 +749,19 @@ font-size: 11px;
     
     margin-left: 0px; 
 }
+.footer-menu-wrap, .footer-logo-wrap
+{
+	text-align: center;
+}
+.footer-text {
+    float:none;
+}
+.footer-logo-wrap
+{
+	margin-top: 0px;
+}
+
+
 
 }
 /*Конец запроса 780*/
@@ -765,7 +794,7 @@ text-align: center;
     float: none; 
 }
 .footer-logo {
-    transform: translateX(110%);
+    transform: translateX(80%);
 }
 .footer-logo-wrap {
     text-align: center;
